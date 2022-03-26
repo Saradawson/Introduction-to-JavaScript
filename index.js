@@ -314,9 +314,29 @@ HINT - try looking up the .includes() method
 */
 
 
-function vowelCounter(/*add your code here*/) {
-  /*add your code here*/
-}
+function vowelCounter(string) {
+  newArr = string.toLowerCase().split('');
+  let count = 0;
+  console.log(newArr)
+  newArr.forEach(element => {
+    if(element.includes('a') === true){
+      count += 1;
+    }else if(element.includes('e') === true){
+      count += 1;
+    }else if(element.includes('i') === true){
+      count += 1;
+    }else if(element.includes('o') === true){
+      count += 1;
+    }else if(element.includes('u') === true){
+      count += 1;
+    }
+  });
+  console.log(count)
+  return count;
+}  
+console.log('count', vowelCounter('Orange'));
+
+
 
 
 
